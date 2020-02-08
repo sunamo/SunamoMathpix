@@ -1,0 +1,54 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoMathpix", "SunamoMathpix\SunamoMathpix.csproj", "{3789083B-901E-4EFE-8350-5FBD70A4E59B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "duo", "..\sunamo\duo\duo.csproj", "{D4C45A56-F726-4B63-B94B-4172AC65F358}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "shared", "..\sunamo\shared\shared.csproj", "{77719C0D-7C8B-4B9E-A644-AEE7CEB35134}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sunamo", "..\sunamo\sunamo\sunamo.csproj", "{F6F92307-B0B3-4D6C-BD9C-8B5FF5560DCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "win", "..\sunamo\win\win.csproj", "{BEE17656-B10C-42B2-B3A4-70208323E3D7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoLaTeX", "..\SunamoLaTeX\SunamoLaTeX\SunamoLaTeX.csproj", "{3B811342-0470-4C28-8A76-71BC39F13A78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3789083B-901E-4EFE-8350-5FBD70A4E59B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3789083B-901E-4EFE-8350-5FBD70A4E59B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3789083B-901E-4EFE-8350-5FBD70A4E59B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3789083B-901E-4EFE-8350-5FBD70A4E59B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4C45A56-F726-4B63-B94B-4172AC65F358}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4C45A56-F726-4B63-B94B-4172AC65F358}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4C45A56-F726-4B63-B94B-4172AC65F358}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4C45A56-F726-4B63-B94B-4172AC65F358}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77719C0D-7C8B-4B9E-A644-AEE7CEB35134}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77719C0D-7C8B-4B9E-A644-AEE7CEB35134}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77719C0D-7C8B-4B9E-A644-AEE7CEB35134}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77719C0D-7C8B-4B9E-A644-AEE7CEB35134}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6F92307-B0B3-4D6C-BD9C-8B5FF5560DCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6F92307-B0B3-4D6C-BD9C-8B5FF5560DCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6F92307-B0B3-4D6C-BD9C-8B5FF5560DCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6F92307-B0B3-4D6C-BD9C-8B5FF5560DCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEE17656-B10C-42B2-B3A4-70208323E3D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEE17656-B10C-42B2-B3A4-70208323E3D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEE17656-B10C-42B2-B3A4-70208323E3D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEE17656-B10C-42B2-B3A4-70208323E3D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B811342-0470-4C28-8A76-71BC39F13A78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B811342-0470-4C28-8A76-71BC39F13A78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B811342-0470-4C28-8A76-71BC39F13A78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B811342-0470-4C28-8A76-71BC39F13A78}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E1022387-1DBE-43BE-9292-CEB9902CE5F0}
+	EndGlobalSection
+EndGlobal
