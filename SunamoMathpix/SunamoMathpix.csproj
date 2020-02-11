@@ -2,6 +2,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>API wrapper for https://mathpix.com/</Description>
+    <Authors>www.sunamo.cz</Authors>
+    <Copyright>www.sunamo.cz</Copyright>
+    <PackageIcon>SunamoMathpix.jpg</PackageIcon>
+    <PackageIconUrl />
+    <RepositoryUrl>https://github.com/sunamo/SunamoMathpix</RepositoryUrl>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\SunamoLaTeX\SunamoLaTeX\SunamoLaTeX.csproj" />
@@ -9,5 +15,11 @@
     <ProjectReference Include="..\..\sunamo\shared\shared.csproj" />
     <ProjectReference Include="..\..\sunamo\sunamo\sunamo.csproj" />
     <ProjectReference Include="..\..\sunamo\win\win.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SunamoMathpix.jpg">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 </Project>
