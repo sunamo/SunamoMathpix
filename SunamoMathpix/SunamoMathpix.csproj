@@ -8,6 +8,7 @@
     <PackageIcon>SunamoMathpix.jpg</PackageIcon>
     <PackageIconUrl />
     <RepositoryUrl>https://github.com/sunamo/SunamoMathpix</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\SunamoLaTeX\SunamoLaTeX\SunamoLaTeX.csproj" />
