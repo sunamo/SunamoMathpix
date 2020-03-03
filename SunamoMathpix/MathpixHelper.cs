@@ -30,7 +30,6 @@ namespace SunamoMathpix
         /// </summary>
         /// <param name="base64"></param>
         /// <param name="convertToUnicode"></param>
-        /// <returns></returns>
         public string Text(string base64, bool convertToUnicode)
         {
             string text = string.Empty;
