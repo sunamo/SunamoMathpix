@@ -15,6 +15,7 @@
     <ProjectReference Include="..\..\sunamo\duo\duo.csproj" />
     <ProjectReference Include="..\..\sunamo\shared\shared.csproj" />
     <ProjectReference Include="..\..\sunamo\sunamo\sunamo.csproj" />
+    <ProjectReference Include="..\..\sunamo\win\win.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SunamoMathpix.jpg">
