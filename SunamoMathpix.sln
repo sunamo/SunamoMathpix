@@ -4,17 +4,17 @@ VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoMathpix", "SunamoMathpix\SunamoMathpix.csproj", "{3789083B-901E-4EFE-8350-5FBD70A4E59B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "duo", "..\sunamo\duo\duo.csproj", "{D4C45A56-F726-4B63-B94B-4172AC65F358}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "duo", "..\..\sunamo\duo\duo.csproj", "{D4C45A56-F726-4B63-B94B-4172AC65F358}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "shared", "..\sunamo\shared\shared.csproj", "{77719C0D-7C8B-4B9E-A644-AEE7CEB35134}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "shared", "..\..\sunamo\shared\shared.csproj", "{77719C0D-7C8B-4B9E-A644-AEE7CEB35134}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sunamo", "..\sunamo\sunamo\sunamo.csproj", "{F6F92307-B0B3-4D6C-BD9C-8B5FF5560DCF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sunamo", "..\..\sunamo\sunamo\sunamo.csproj", "{F6F92307-B0B3-4D6C-BD9C-8B5FF5560DCF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "win", "..\sunamo\win\win.csproj", "{BEE17656-B10C-42B2-B3A4-70208323E3D7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "win", "..\..\sunamo\win\win.csproj", "{BEE17656-B10C-42B2-B3A4-70208323E3D7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoLaTeX", "..\SunamoLaTeX\SunamoLaTeX\SunamoLaTeX.csproj", "{3B811342-0470-4C28-8A76-71BC39F13A78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xlf", "..\sunamo\Xlf\Xlf.csproj", "{00B76D22-B82F-43FD-AC48-4B1F56E6910F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xlf", "..\..\sunamo\Xlf\Xlf.csproj", "{00B76D22-B82F-43FD-AC48-4B1F56E6910F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

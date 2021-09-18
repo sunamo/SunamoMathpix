@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -6,16 +6,17 @@
     <Authors>www.sunamo.cz</Authors>
     <Copyright>www.sunamo.cz</Copyright>
     <PackageIcon>SunamoMathpix.jpg</PackageIcon>
-    <PackageIconUrl />
+    <PackageIconUrl></PackageIconUrl>
     <RepositoryUrl>https://github.com/sunamo/SunamoMathpix</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\SunamoLaTeX\SunamoLaTeX\SunamoLaTeX.csproj" />
-    <ProjectReference Include="..\..\sunamo\duo\duo.csproj" />
-    <ProjectReference Include="..\..\sunamo\shared\shared.csproj" />
-    <ProjectReference Include="..\..\sunamo\sunamo\sunamo.csproj" />
-    <ProjectReference Include="..\..\sunamo\win\win.csproj" />
+    <ProjectReference Include="..\..\..\sunamo\duo\duo.csproj"></ProjectReference>
+    <ProjectReference Include="..\..\..\sunamo\shared\shared.csproj"></ProjectReference>
+    <ProjectReference Include="..\..\..\sunamo\sunamo\sunamo.csproj"></ProjectReference>
+    <ProjectReference Include="..\..\..\sunamo\win\win.csproj"></ProjectReference>
+    <ProjectReference Include="..\..\..\sunamo\Xlf\Xlf.csproj"></ProjectReference>
+    <ProjectReference Include="..\..\SunamoLaTeX\SunamoLaTeX\SunamoLaTeX.csproj"></ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="SunamoMathpix.jpg">
@@ -23,11 +24,5 @@
       <PackagePath>
       </PackagePath>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\sunamo\Xlf\Xlf.csproj">
-      <Project>{00B76D22-B82F-43FD-AC48-4B1F56E6910F}</Project>
-      <Name>Xlf</Name>
-    </ProjectReference>
   </ItemGroup>
 </Project>
