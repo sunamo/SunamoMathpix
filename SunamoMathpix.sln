@@ -16,7 +16,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SunamoLaTeX", "..\SunamoLaT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xlf", "..\..\sunamo\Xlf\Xlf.csproj", "{00B76D22-B82F-43FD-AC48-4B1F56E6910F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunamoMathpix.Tests", "e:\Documents\vs\Projects\_nupkg\SunamoMathpix\SunamoMathpix.Tests\SunamoMathpix.Tests.csproj", "{C614BD24-3C85-4FE1-A133-7F0ED6A52192}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunamoMathpix.Tests", "SunamoMathpix.Tests\SunamoMathpix.Tests.csproj", "{C614BD24-3C85-4FE1-A133-7F0ED6A52192}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resources", "..\..\sunamo\Resources\Resources.csproj", "{9B7ECF77-67EB-4AA9-8C3A-2C4577384A36}"
 EndProject
