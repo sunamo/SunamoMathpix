@@ -1,13 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net48</TargetFramework>
-    <Description>API wrapper for https://mathpix.com/</Description>
-    <Authors>www.sunamo.cz</Authors>
-    <Copyright>www.sunamo.cz</Copyright>
-    <PackageIcon>SunamoMathpix.jpg</PackageIcon>
-    <PackageIconUrl></PackageIconUrl>
-    <RepositoryUrl>https://github.com/sunamo/SunamoMathpix</RepositoryUrl>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <TargetFramework>net7.0-windows</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\sunamo\duo\duo.csproj"></ProjectReference>
@@ -23,4 +16,10 @@
       <PackagePath></PackagePath>
     </None>
   </ItemGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>$(DefineConstants)</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants>$(DefineConstants)</DefineConstants>
+  </PropertyGroup>
 </Project>
