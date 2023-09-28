@@ -1,10 +1,3 @@
-using System;
-using System.Net;
-using System.Net.Http;
-using System.Text;
-using SunamoLaTeX;
-using win.Helpers.Powershell;
-
 namespace SunamoMathpix
 {
     public class MathpixHelper

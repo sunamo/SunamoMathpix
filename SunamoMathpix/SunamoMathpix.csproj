@@ -6,7 +6,7 @@
     <ProjectReference Include="..\..\..\sunamo\duo\duo.csproj"></ProjectReference>
     <ProjectReference Include="..\..\..\sunamo\shared\shared.csproj"></ProjectReference>
     <ProjectReference Include="..\..\..\sunamo\sunamo\sunamo.csproj"></ProjectReference>
-    <ProjectReference Include="..\..\..\sunamo\win\win.csproj"></ProjectReference>
+    <ProjectReference Include="..\..\..\sunamo\win.win\win.win.csproj"></ProjectReference>
     <ProjectReference Include="..\..\..\sunamo\Xlf\Xlf.csproj"></ProjectReference>
     <ProjectReference Include="..\..\SunamoLaTeX\SunamoLaTeX\SunamoLaTeX.csproj"></ProjectReference>
   </ItemGroup>
@@ -17,9 +17,9 @@
     </None>
   </ItemGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DefineConstants>$(DefineConstants)</DefineConstants>
+    <DefineConstants>$(DefineConstants);ASYNC</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DefineConstants>$(DefineConstants)</DefineConstants>
+    <DefineConstants>$(DefineConstants);ASYNC</DefineConstants>
   </PropertyGroup>
 </Project>
