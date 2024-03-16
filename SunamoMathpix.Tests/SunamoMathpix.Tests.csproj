@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net7.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
   <ItemGroup>
@@ -9,8 +9,8 @@
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0"></PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\SunamoMathpix\SunamoMathpix\SunamoMathpix.csproj"></ProjectReference>
-    <ProjectReference Include="..\..\..\sunamo\sunamo\sunamo.csproj"></ProjectReference>
+    <PackageReference Include="SunamoMathpix" Version="*" />
+    <PackageReference Include="SunamoShared" Version="*" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TestData\" />

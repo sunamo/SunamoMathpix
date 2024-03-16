@@ -8,7 +8,7 @@ namespace SunamoMathpix
         const string appJson = "application/json";
         const string uri = "https://api.mathpix.com/v3/text";
 
-        string app_id; 
+        string app_id;
         string app_key;
         string directoryOfCurl;
         public MathpixHelper(string app_id, string app_key, string directoryOfCurl)
@@ -40,7 +40,7 @@ namespace SunamoMathpix
 
             foreach (var item in result)
             {
-                text += SH.Join(string.Empty, item);
+                text += string.Join(string.Empty, item);
             }
 
             if (convertToUnicode)

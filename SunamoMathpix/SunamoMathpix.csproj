@@ -1,14 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net7.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Version>23.12.9.1</Version>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\sunamo\duo\duo.csproj"></ProjectReference>
-    <ProjectReference Include="..\..\..\sunamo\shared\shared.csproj"></ProjectReference>
-    <ProjectReference Include="..\..\..\sunamo\sunamo\sunamo.csproj"></ProjectReference>
-    <ProjectReference Include="..\..\..\sunamo\win.win\win.win.csproj"></ProjectReference>
-    <ProjectReference Include="..\..\..\sunamo\Xlf\Xlf.csproj"></ProjectReference>
-    <ProjectReference Include="..\..\SunamoLaTeX\SunamoLaTeX\SunamoLaTeX.csproj"></ProjectReference>
+    <ProjectReference Include="..\..\..\sunamoWithoutLocalDep\duo\duo.csproj"></ProjectReference>
+    <PackageReference Include="SunamoShared" Version="*" />
+    <ProjectReference Include="..\..\..\sunamoWithoutLocalDep\win.win\win.win.csproj"></ProjectReference>
+    <ProjectReference Include="..\..\..\sunamoWithoutLocalDep\Xlf\Xlf.csproj"></ProjectReference>
+    <PackageReference Include="SunamoLaTeX" Version="*" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SunamoMathpix.jpg">
