@@ -1,8 +1,8 @@
+
+namespace SunamoMathpix;
 using System.Collections.ObjectModel;
 using System.Management.Automation;
 using SunamoMathpix._sunamo;
-
-namespace SunamoMathpix;
 
 public class MathpixHelper
 {
