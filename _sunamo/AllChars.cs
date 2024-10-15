@@ -1,4 +1,3 @@
-
 namespace SunamoMathpix._sunamo;
 internal class AllChars
 {

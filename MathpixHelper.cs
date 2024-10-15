@@ -1,7 +1,6 @@
+namespace SunamoMathpix;
 using System.Management.Automation;
 using SunamoMathpix._sunamo;
-
-namespace SunamoMathpix;
 
 public class MathpixHelper
 {
