@@ -61,8 +61,8 @@ public class MathpixHelper
 
         if (latexHelperConvertToUnicode != null) text = latexHelperConvertToUnicode(text);
 
-        text = text.TrimStart(AllChars.lb, AllChars.bs);
-        text = text.TrimEnd(AllChars.rb, AllChars.bs);
+        text = text.TrimStart('(', '\\');
+        text = text.TrimEnd(')', '\\');
         text = text.Trim();
 
         return text;

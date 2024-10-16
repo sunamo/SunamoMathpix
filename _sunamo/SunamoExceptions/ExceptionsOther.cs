@@ -1,13 +1,13 @@
+namespace SunamoMathpix._sunamo.SunamoExceptions;
 using System.Diagnostics;
 
-namespace SunamoMathpix._sunamo.SunamoExceptions;
 partial class Exceptions
 {
     private static string CheckBefore(string before)
     {
         return string.IsNullOrWhiteSpace(before) ? "" : before + ": ";
     }
-    public static string TextOfExceptions(Exception ex, bool alsoInner = true)
+    internal static string TextOfExceptions(Exception ex, bool alsoInner = true)
     {
         if (ex == null) return "";
         StringBuilder sb = new();
