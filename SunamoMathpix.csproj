@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
-    <Version>24.12.4.1</Version>
+    <Version>24.12.14.1</Version>
     <Description>Converting images with math notation using mathpix.com to plain text</Description>
     <Authors>www.sunamo.cz</Authors>
     <Copyright>www.sunamo.cz</Copyright>
@@ -11,7 +11,8 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>readme.md</PackageReadmeFile>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <PackageReleaseNotes>Remove vulnerable packages</PackageReleaseNotes>
+    <PackageReleaseNotes>Added #nullable context</PackageReleaseNotes>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
     <None Include="SunamoMathpix.jpg">
