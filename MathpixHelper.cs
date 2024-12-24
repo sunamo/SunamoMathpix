@@ -1,31 +1,13 @@
 namespace SunamoMathpix;
 using System.Management.Automation;
 
-public class MathpixHelper
+public class MathpixHelper(string app_id, string app_key, string directoryOfCurl)
 {
-    private const string contentType = "content-type";
-    private const string appId = "app_id";
-    private const string appKey = "app_key";
-    private const string appJson = "application/json";
-    private const string uri = "https://api.mathpix.com/v3/text";
-
-    private readonly string app_id;
-    private readonly string app_key;
-    private readonly string directoryOfCurl;
-
-    public MathpixHelper(string app_id, string app_key, string directoryOfCurl)
-    {
-        this.app_id = app_id;
-        this.app_key = app_key;
-        this.directoryOfCurl = directoryOfCurl;
-    }
 
     /// <summary>
     ///     A1 with starting part like data:image/jpeg;base64,
     ///     Pass A2 if want to convert to unicode - package SunamoLaTex
     /// </summary>
-    /// <param name="base64"></param>
-    /// <param name="convertToUnicode"></param>
     public string Text(string base64, Func<string, string> latexHelperConvertToUnicode)
     {
         var text = string.Empty;
