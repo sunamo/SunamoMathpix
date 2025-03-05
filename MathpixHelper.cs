@@ -1,9 +1,7 @@
 namespace SunamoMathpix;
-using System.Management.Automation;
 
 public class MathpixHelper(string app_id, string app_key, string directoryOfCurl)
 {
-
     /// <summary>
     ///     A1 with starting part like data:image/jpeg;base64,
     ///     Pass A2 if want to convert to unicode - package SunamoLaTex
@@ -11,7 +9,6 @@ public class MathpixHelper(string app_id, string app_key, string directoryOfCurl
     public string Text(string base64, Func<string, string> latexHelperConvertToUnicode)
     {
         var text = string.Empty;
-
         using (var ps = PowerShell.Create())
         {
             var commands = new[]
@@ -28,24 +25,16 @@ public class MathpixHelper(string app_id, string app_key, string directoryOfCurl
                                                   Environment.NewLine +
                                                   "echo $resp.text"
             };
-
             // Add the command you want to run
-
             foreach (var item in commands) ps.AddCommand(item);
-
             // Execute the command synchronously and get results
             var results = ps.Invoke();
-
             text += string.Join(string.Empty, results);
         }
-
-
         if (latexHelperConvertToUnicode != null) text = latexHelperConvertToUnicode(text);
-
         text = text.TrimStart('(', '\\');
         text = text.TrimEnd(')', '\\');
         text = text.Trim();
-
         return text;
     }
 }
