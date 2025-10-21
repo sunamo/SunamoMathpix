@@ -1,3 +1,5 @@
+// EN: Variable names have been checked and replaced with self-descriptive names
+// CZ: Názvy proměnných byly zkontrolovány a nahrazeny samopopisnými názvy
 namespace SunamoMathpix;
 
 public class MathpixHelper(string app_id, string app_key, string directoryOfCurl)
