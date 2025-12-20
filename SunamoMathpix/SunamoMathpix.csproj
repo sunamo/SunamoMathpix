@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <Version>25.3.29.1</Version>
     <Description>Converting images with math notation using mathpix.com to plain text</Description>
     <Authors>www.sunamo.cz</Authors>
@@ -21,7 +21,8 @@
       </PackagePath>
     </None>
     <None Include="readme.md" Pack="True" PackagePath="." />
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.3" Pack="True" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.3"
+      Pack="True" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.PowerShell.SDK" Version="7.5.0" />
