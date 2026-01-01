@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>net10.0;net9.0;net8.0</TargetFrameworks>
-    <Version>25.12.21.1</Version>
+    <Version>26.1.1.168</Version>
     <Description>Converting images with math notation using mathpix.com to plain text</Description>
     <Authors>www.sunamo.cz</Authors>
     <Copyright>www.sunamo.cz</Copyright>
