@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>net10.0;net9.0;net8.0</TargetFrameworks>
-    <Version>26.1.1.168</Version>
+    <Version>26.2.4.1</Version>
     <Description>Converting images with math notation using mathpix.com to plain text</Description>
     <Authors>www.sunamo.cz</Authors>
     <Copyright>www.sunamo.cz</Copyright>
@@ -11,8 +11,15 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>readme.md</PackageReadmeFile>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <PackageReleaseNotes>feat: Added net10.0 to TargetFrameworks</PackageReleaseNotes>
+    <PackageReleaseNotes>feat: Enable SourceLink and debug symbols </PackageReleaseNotes>
     <Nullable>enable</Nullable>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DebugType>embedded</DebugType>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
   </PropertyGroup>
   <ItemGroup>
     <None Include="SunamoMathpix.jpg">
@@ -22,19 +29,17 @@
     </None>
     <None Include="readme.md" Pack="True" PackagePath="." />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.3" Pack="True" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.*" PrivateAssets="All" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.PowerShell.SDK" Version="7.4.6" />
     <PackageReference Include="System.Formats.Asn1" Version="9.0.3" />
-    <PackageReference Include="System.Net.Http" Version="4.3.4" />
     <PackageReference Include="System.Text.Encodings.Web" Version="9.0.3" />
   </ItemGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DefineConstants>$(DefineConstants);ASYNC</DefineConstants>
-    <NoWarn>CA1822;CS1573;CS1572;CS1570;CA1866;CA1865;CA1867;CS1998;CA1847;IDE0066</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DefineConstants>$(DefineConstants);ASYNC</DefineConstants>
-    <NoWarn>CA1822;CS1573;CS1572;CS1570;CA1866;CA1865;CA1867;CS1998;CA1847;IDE0066</NoWarn>
   </PropertyGroup>
 </Project>

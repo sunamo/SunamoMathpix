@@ -1,22 +1,30 @@
 namespace SunamoMathpix;
 
-public class MathpixHelper(string app_id, string app_key, string directoryOfCurl)
+/// <summary>
+/// Helper class for converting images with math notation using Mathpix API to plain text.
+/// </summary>
+/// <param name="appId">The Mathpix application ID for API authentication.</param>
+/// <param name="appKey">The Mathpix application key for API authentication.</param>
+/// <param name="directoryOfCurl">The directory path where curl is located.</param>
+public class MathpixHelper(string appId, string appKey, string directoryOfCurl)
 {
     /// <summary>
-    ///     A1 with starting part like data:image/jpeg;base64,
-    ///     Pass A2 if want to convert to unicode - package SunamoLaTex
+    /// Converts a base64-encoded image containing mathematical notation to plain text using Mathpix API.
     /// </summary>
+    /// <param name="base64">The base64-encoded image string with starting part like data:image/jpeg;base64,</param>
+    /// <param name="latexHelperConvertToUnicode">Optional function to convert LaTeX to Unicode. Pass null if conversion is not needed. Use SunamoLaTex package for conversion.</param>
+    /// <returns>The extracted mathematical text from the image, trimmed and optionally converted to Unicode.</returns>
     public string Text(string base64, Func<string, string> latexHelperConvertToUnicode)
     {
         var text = string.Empty;
-        using (var ps = PowerShell.Create())
+        using (var powerShell = PowerShell.Create())
         {
             var commands = new[]
             {
                 "cd \"" + directoryOfCurl + "\"", @"$uri = 'https://api.mathpix.com/v3/text'" + Environment.NewLine +
                                                   "$headers = @{" +
-                                                  "app_id = '" + app_id + "'" + Environment.NewLine +
-                                                  "app_key= '" + app_key + "'" +
+                                                  "app_id = '" + appId + "'" + Environment.NewLine +
+                                                  "app_key= '" + appKey + "'" +
                                                   "} " + Environment.NewLine +
                                                   "$json = @{" +
                                                   "src = \"" + base64 + "\"" +
@@ -25,10 +33,8 @@ public class MathpixHelper(string app_id, string app_key, string directoryOfCurl
                                                   Environment.NewLine +
                                                   "echo $resp.text"
             };
-            // Add the command you want to run
-            foreach (var item in commands) ps.AddCommand(item);
-            // Execute the command synchronously and get results
-            var results = ps.Invoke();
+            foreach (var command in commands) powerShell.AddCommand(command);
+            var results = powerShell.Invoke();
             text += string.Join(string.Empty, results);
         }
         if (latexHelperConvertToUnicode != null) text = latexHelperConvertToUnicode(text);
