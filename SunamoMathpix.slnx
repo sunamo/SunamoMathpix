@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="SunamoMathpix.Tests\\SunamoMathpix.Tests.csproj" />
+  <Project Path="RunnerMathpix\\RunnerMathpix.csproj" />
+  <Project Path="SunamoMathpix\SunamoMathpix.csproj" />
+</Solution>
