@@ -1,20 +1,28 @@
-### SunamoMathpix
+# SunamoMathpix
 
-Part of PlatformIndependentNuGetPackages:
+A .NET library for converting images containing mathematical notation to plain text using the [Mathpix](https://mathpix.com/) OCR API.
 
-- [nuget.org](https://www.nuget.org/profiles/sunamo)
-- [github.org](https://github.com/sunamo/PlatformIndependentNuGetPackages)
+## Features
 
-Another links:
+- Converts base64-encoded images with math notation to plain text via Mathpix API
+- Optional LaTeX-to-Unicode conversion (use the `SunamoLaTex` package)
+- Uses PowerShell to invoke the Mathpix REST API through curl
 
-- [Developer site](https://sunamo.cz)
+## Usage
 
-Request for new features / bug report / etc: [Mail](mailto:radek.jancik@sunamo.cz) or on GitHub
+```csharp
+var helper = new MathpixHelper("your-app-id", "your-app-key", @"C:\path\to\curl");
+string result = helper.Text(base64ImageString, null);
+```
+
 ## Target Frameworks
 
-**TargetFrameworks:** `net10.0;net9.0`
+`net10.0;net9.0;net8.0`
 
-**Reason:** Dependencies require .NET 9.0+:
-- PowerShell SDK 7.5.0+ requires net9.0
-- System.Management.Automation 7.5.0 requires net9.0
-- Lock type (System.Threading.Lock) available from net9.0
+## Links
+
+- [NuGet](https://www.nuget.org/profiles/sunamo)
+- [GitHub](https://github.com/sunamo/PlatformIndependentNuGetPackages)
+- [Developer site](https://sunamo.cz)
+
+Request for new features / bug report: [Mail](mailto:radek.jancik@sunamo.cz) or on GitHub
