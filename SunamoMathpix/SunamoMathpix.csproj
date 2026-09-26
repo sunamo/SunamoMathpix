@@ -35,7 +35,7 @@
     <None Include="readme.md" Pack="True" PackagePath="." />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.2" Pack="True" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.102" PrivateAssets="all" />
-    <PackageReference Include="System.Security.Cryptography.Xml" Version="10.0.9" />
+    <PackageReference Include="System.Security.Cryptography.Xml" Version="10.0.10" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.PowerShell.SDK" Version="7.4.6" />
