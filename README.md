@@ -1,5 +1,10 @@
 # SunamoMathpix
 
+## Short description
+
+Knihovna pro převod obrázků s matematickou notací na prostý text pomocí služby mathpix.com. Obsahuje Runner a testy.
+
+
 Converting images with math notation using mathpix.com to plain text
 
 ## Overview
