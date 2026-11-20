@@ -1,7 +1,20 @@
 namespace SunamoMathpix;
 
+/// <summary>
+/// Mathpix helper.
+/// </summary>
+/// <param name="appId">The app id.</param>
+/// <param name="appKey">The app key.</param>
+/// <param name="curlDirectory">The curl directory.</param>
+/// <returns>The mathpix helper result.</returns>
 public class MathpixHelper(string appId, string appKey, string curlDirectory)
 {
+    /// <summary>
+    /// Text.
+    /// </summary>
+    /// <param name="base64Image">The base 64 image.</param>
+    /// <param name="convertLatexToUnicode">The convert latex to unicode.</param>
+    /// <returns>The text result.</returns>
     public string Text(string base64Image, Func<string, string>? convertLatexToUnicode)
     {
         var text = string.Empty;
